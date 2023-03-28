@@ -7,6 +7,8 @@ Results public here:
 SSMLinearRegression vs sklearn.linear_model LinearRegression
 Time of calculation in seconds
 
+PC 4-cores: 3GHz, 16Gb memory
+
 Test 1: 100 elements of x and y
 Results of SSMLinearRegression
 Incline_coeff is: [3.00313148]
@@ -72,3 +74,38 @@ Coef_: [[3.00010051]]
 Intercept_: [4.49981545]
 Time of calculation 0.6994533538818359
 Time of SSM/ time of sklearn: 212.5827972676329
+
+Google colab: 12,7Gb memory
+
+Test 7: 10 000 000 elements of x and y
+Results of SSMLinearRegression
+Incline_coeff is: [2.99993386]
+Shift_value is:   [4.50004413]
+Time of calculation 95.25705456733704
+Results of sklearn LinearRegression
+Coef_: [[2.99993386]] 
+Intercept_: [4.50004413]
+Time of calculation 1.063683032989502
+Time of SSM/ time of sklearn: 89.55398517509039
+
+Test 8: 100 elements of x and y
+Results of SSMLinearRegression
+Incline_coeff is: [2.92659894]
+Shift_value is:   [4.58024414]
+Time of calculation 0.0020911693572998047
+Results of sklearn LinearRegression
+Coef_: [[2.92659894]] 
+Intercept_: [4.58024414]
+Time of calculation 0.004999876022338867
+Time of SSM/ time of sklearn: 0.4182442420485432
+
+Test 9: 1000 elements of x and y
+Results of SSMLinearRegression
+Incline_coeff is: [3.01326982]
+Shift_value is:   [4.48632479]
+Time of calculation 0.018670082092285156
+Results of sklearn LinearRegression
+Coef_: [[3.01326982]] 
+Intercept_: [4.48632479]
+Time of calculation 0.002046823501586914
+Time of SSM/ time of sklearn: 9.121490972626674
