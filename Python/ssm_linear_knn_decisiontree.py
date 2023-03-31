@@ -226,7 +226,7 @@ class MyDecisionTree(object):
         Create a dictionary with data, labels and deapth
         """
         unique_labels = np.unique(y)
-        if (len(unique_labels) == 1) or (depth == max_depth): # This is a Leaf, the end of branch
+        if (len(unique_labels) == 1) or (depth == self.max_depth): # This is a Leaf, the end of branch
             unique_labels, counts_unique_labels = np.unique(y, return_counts = True)
             index = counts_unique_labels.argmax()
             classification = unique_labels[index]
